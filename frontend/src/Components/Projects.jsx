@@ -1,13 +1,13 @@
 import React from 'react'
 import { Button, Card, CardBody, CardGroup, CardHeader, CardImg, CardText, CardTitle, Col, Container, ListGroup, ListGroupItem, ModalTitle, Row } from 'react-bootstrap'
 import loginImg from "./assets/img/loginfromImg.jpeg"
-import portfolioImg from "./assets/img/portfolioImg.jpg"
+import portfolioImg from "./assets/img/portfolioImg.jpeg"
 import defaultImg from "./assets/img/default-img.png"
-import soccerblissImg from "./assets/img/soccerbliss-webPage.jpeg"
+// import soccerblissImg from "./assets/img/soccerbliss-webPage.jpeg"
 import profiviImg from "./assets/img/profivi-webPage.jpeg"
 import lakhImg from "./assets/img/la-kh-webPage.jpeg"
 import elitesalonImg from "./assets/img/elitesalon-webPage.jpeg"
-import vanishyaImg from "./assets/img/vanishya-webPage.jpeg"
+// import vanishyaImg from "./assets/img/vanishya-webPage.jpeg"
 
 const Projects = () => {
 
@@ -25,14 +25,14 @@ const Projects = () => {
     // },
     {
       img:portfolioImg ,
-      link:'https://github.com/Gokul095/Portfolio.git' ,
+      link:'https://github.com/Mukesh-Payyavula/Portfolio' ,
       titleName: "My Portfolio",
       content: "Designed and developed a personal portfolio website to showcase my skills, projects, and achievements. The website serves as an interactive and informative platform for potential employers and collaborators.",
       programs: 
         {
         frontend:"HTML, CSS, Javascript, Bootstrap, React Js",
         backend:"Node Js, Express Js, Nodemailer (for email)",
-        database:"Not applicable",
+        database:"Mongo DB",
       }
     
     },

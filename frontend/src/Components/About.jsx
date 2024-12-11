@@ -30,7 +30,7 @@ const About = () => {
             <Image src={aboutImg} alt="gokul-image" fluid rounded />
           </Col> */}
           <Col xs={12} md={6} className="py-3">
-            <Image src={myImg} alt="gokul-image" fluid rounded />
+            <Image src={myImg} alt="mukesh" fluid rounded />
           </Col>
 
           <Col xs={12} md={6} className="py-3">
