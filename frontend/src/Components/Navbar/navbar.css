@@ -1,0 +1,66 @@
+.header-section {
+    width: 100%;
+    border-bottom: 1px solid var(--cusborder);
+    z-index: 9;
+    position: relative;
+}
+
+nav .container {
+    gap: 10px;
+}
+
+.navbar-nav {
+    gap: 15px;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+.downloadCv-btn {
+    border: 1px solid #712cf9;
+    color: #712cf9;
+}
+
+.header-section .bg-body-tertiary {
+    background-color: transparent !important;
+}
+
+.header-section .bg-body-tertiary.menu-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    transition: all .9s;
+    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.menu-fixed .bg-body-tertiary {
+    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+
+
+.modeToggle {
+    font-size: 25px;
+    border: none;
+}
+
+.decToggle {
+    display: block;
+}
+
+.mobileToggle {
+    display: none;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .decToggle {
+        display: none;
+    }
+
+    .mobileToggle {
+        display: block;
+    }
+}
