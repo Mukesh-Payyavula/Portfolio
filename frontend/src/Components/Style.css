@@ -1,26 +1,45 @@
 /* Common Page */
-
 .border-none {
     border: none;
+    margin-top: 90px;
 }
-
 
 .btn-cutom-color {
     background-color: transparent;
     border: 1px solid var(--bs-body-color);
     color: var(--bs-body-color) !important;
-
+    transition: transform 0.3s ease;
 }
 
 .btn-cutom-color:hover {
     background-color: transparent;
     color: #712cf9 !important;
     border: 1px solid #712cf9;
+    transform: scale(1.1); /* Added scale effect on hover */
+}
 
+.btn-cutom-color:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(113, 44, 249, 0.25); /* Focus effect */
 }
 
 /* Home */
+.hero-banner {
+    background-color: #f0f0f0;
+    position: relative;
+    z-index: 1;
+    padding-top: 70px;
+}
 
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Makes the card float */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+}
 
 .left-hero .card-header {
     padding: 20px;
@@ -57,12 +76,60 @@
 
 @keyframes pulse-width {
     50% {
-        width: 60%
+        width: 60%;
     }
 }
 
-/* About */
+.text-design {
+    position: relative;
+    display: inline-block;
+    color: #333;
+    font-size: 3rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b, #6a11cb, #2575fc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 5s ease infinite;
+}
 
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Scroll Animation */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-in-out;
+    animation-delay: 0.3s; /* Added delay */
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Adding subtle hover effect to text */
+.card-title:hover,
+.card-text:hover {
+    color: #2575fc;
+    transition: color 0.3s ease;
+}
+
+/* About */
 .about-header {
     font-size: 36px;
     font-weight: 700;
@@ -94,15 +161,11 @@
     margin-bottom: 10px;
 }
 
-
 /* Skills */
-
-
 .skill-set-card {
     align-items: center;
     padding-top: 2rem;
 }
-
 
 .skill-set-card .card-img-top {
     width: 50%;
@@ -110,9 +173,7 @@
     object-fit: contain;
 }
 
-
 /* Progress-Bar */
-
 .progress {
     width: 80%;
     margin-bottom: 2rem;
@@ -122,6 +183,17 @@
 .progress-bar {
     color: var(--bs-card-title-color);
     background-color: #c9f31d;
+    transition: width 1s ease-in-out;
+    animation: progressBarAnimation 2s ease-in-out forwards;
+}
+
+@keyframes progressBarAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
 }
 
 .progress-bar .visually-hidden {
@@ -132,14 +204,11 @@
 }
 
 /* Project */
-
-
 #project .card {
     height: 100% !important;
 }
 
-/* Contact  */
-
+/* Contact */
 .formError {
     width: 100%;
     margin: 20px 0px;
@@ -147,7 +216,6 @@
     background-color: transparent !important;
     border: 2px solid rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
     color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
-
 }
 
 .formSucc {
@@ -157,7 +225,6 @@
     background-color: transparent !important;
     border: 2px solid rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
     color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
-
 }
 
 .formPen {
@@ -167,5 +234,104 @@
     background-color: transparent !important;
     border: 2px solid rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
     color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+}
 
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .text-design {
+        font-size: 2rem;
+    }
+}
+
+/* Colorful Backgrounds */
+.hero-banner {
+    background-color: #f0f0f0; /* Light background */
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b, #6a11cb, #2575fc); /* Colorful gradient */
+    padding-top: 70px;
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Card Hover Effect */
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-15px); /* Makes the card float higher */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.05); /* Light hover background */
+}
+
+/* Text Design */
+.text-design {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--bs-body-color);
+    color: transparent;
+    transition: all 1s ease-in-out;
+    font-size: 4rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b, #6a11cb, #2575fc);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.text-design:hover {
+    color: transparent;
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b, #6a11cb, #2575fc);
+    animation: gradientHoverAnimation 5s ease-in-out infinite;
+}
+
+@keyframes gradientHoverAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Smooth Scroll Animation */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-in-out;
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Progress Bar Animation */
+.progress-bar {
+    background-color: #c9f31d;
+    transition: width 1s ease-in-out;
+    animation: progressBarAnimation 2s ease-in-out forwards;
+}
+
+@keyframes progressBarAnimation {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
 }

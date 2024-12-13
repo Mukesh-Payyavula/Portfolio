@@ -1,0 +1,67 @@
+/* Footer.css */
+.footer-bg {
+    padding: 20px 0;
+  }
+  
+  .footer-info p {
+    margin: 5px 0;
+  }
+  
+  .social-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+  }
+  
+  .social-links .list-inline-item {
+    display: inline-block; /* Ensures the items stay inline */
+    padding: 0;
+    margin: 0;
+    background: none; /* Remove background for list items */
+  }
+  
+  .social-icon {
+     /* Default icon color */
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer; /* Make the icon clickable */
+  }
+  
+  /* Social icon hover effect */
+  .social-icon:hover {
+    color: #3498db; /* Change to blue on hover */
+    transform: scale(1.2); /* Enlarge the icon on hover */
+  }
+  
+  /* Links styling */
+  .footer-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for links */
+  .footer-link:hover {
+    color: #3498db; /* Change link color on hover */
+  }
+  
+  .footer-text {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Media Query for responsive design */
+  @media (max-width: 768px) {
+    .footer-info p {
+      font-size: 14px;
+    }
+  
+    .social-links {
+      gap: 1rem; /* Reduce gap on smaller screens */
+    }
+  }
+  

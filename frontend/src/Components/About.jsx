@@ -15,7 +15,6 @@ import {
   CardTitle,
   ListGroup,
   ListGroupItem,
-  ModalTitle,
   CardGroup,
 } from "react-bootstrap";
 
@@ -26,9 +25,6 @@ const About = () => {
     <div id="about" className="pb-5">
       <Container>
         <Row>
-          {/* <Col xs={12} md={6} className="py-3">
-            <Image src={aboutImg} alt="gokul-image" fluid rounded />
-          </Col> */}
           <Col xs={12} md={6} className="py-3">
             <Image src={myImg} alt="mukesh" fluid rounded />
           </Col>
@@ -56,10 +52,7 @@ const About = () => {
                       <Card>
                         <CardBody className="p-4">
                           <CardTitle className="mb-4">Email</CardTitle>
-                          <CardText
-                            as="a"
-                            href="mailto:payyavulamukesh@gmail.com"
-                          >
+                          <CardText as="a" href="mailto:payyavulamukesh@gmail.com">
                             payyavulamukesh@gmail.com
                           </CardText>
                         </CardBody>
@@ -113,6 +106,7 @@ const About = () => {
           </Col>
         </Row>
       </Container>
+
       <Container>
         <CardGroup>
           <Row>
@@ -149,7 +143,7 @@ const About = () => {
                   </CardText>
                   <CardText as="li">
                     Designed and implemented server-side logic using programming
-                    languages PHP, Node JS
+                    languages PHP, Node JS.
                   </CardText>
                   <CardText as="li">
                     Worked with databases, including MySQL to manage and store data
@@ -158,35 +152,7 @@ const About = () => {
                 </CardBody>
               </Card>
             </Col>
-            <Col xs={12} md={6} className="py-3">
-              {/* <Card>
-                <CardBody className="exp-body">
 
-
-                  <CardTitle as="h4">Web Developer</CardTitle>
-                  <CardText as="p" className="mb-1">
-                    MyFluiditi
-                  </CardText>
-                  <CardText as="p">April 2024 - Present</CardText>
-
-                  <CardTitle>Roles & Responsibilities</CardTitle>
-                  <CardText as="li">
-                    Translated Figma designs into fully functional WordPress websites, ensuring pixel-perfect
-                    implementation . Developed 12+ websites, all successfully running live.
-                  </CardText>
-                  <CardText as="li">
-                    Implemented frontend API functions to handle data retrieval from backend systems and display it
-                    on the client side, as well as posting data from frontend forms to the backend via API, ensuring
-                    smooth data exchange and responsiveness.
-                  </CardText>
-                  <CardText as="li">
-                    Built and maintained E-Commerce websites, integrating secure payment gateways for a seamless
-                    shopping experience.
-                  </CardText>
-
-                </CardBody>
-              </Card> */}
-            </Col>
             <Col xs={12} md={6} className="py-3">
               <Card>
                 <CardHeader>
@@ -213,7 +179,7 @@ const About = () => {
 
                   <div className="mb-4">
                     <CardTitle as="h6">2015 - 2019</CardTitle>
-                    <CardTitle as="h6">B.Tech </CardTitle>
+                    <CardTitle as="h6">B.Tech</CardTitle>
                     <CardTitle as="h6">
                       Vaagdevi College of Engineering
                     </CardTitle>

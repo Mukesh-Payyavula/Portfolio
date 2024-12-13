@@ -2,15 +2,15 @@ const expressAsyncHandler = require("express-async-handler");
 const nodemailer = require("nodemailer");
 const dotenv = require("dotenv");
 
-dotenv.config(); // Load environment variables
+dotenv.config(); 
 
 let transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: process.env.SMTP_PORT,
-    secure: true, // true for 465, false for other ports
+    secure: true, 
     auth: {
-        user: process.env.SMTP_MAIL, // SMTP user from environment
-        pass: process.env.SMTP_PASSWORD, // SMTP password from environment
+        user: process.env.SMTP_MAIL,
+        pass: process.env.SMTP_PASSWORD, 
     },
 });
 
@@ -21,7 +21,7 @@ const sendEmail = expressAsyncHandler(async (req, res) => {
 
     const mailOptions = {
         from: email, // sender's email
-        to: process.env.TO_EMAIL, // your SMTP email address
+        to: process.env.TO_EMAIL,
         subject: subject, 
         html: `
             <p><strong>Name:</strong> ${name}</p>
