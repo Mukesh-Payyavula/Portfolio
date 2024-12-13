@@ -29,8 +29,8 @@ const Contact = () => {
   // };
 
   
-  const baseUrl = 'http://localhost:8000';
-  // const baseUrl = 'https://portfolio-v8e5.onrender.com';
+  // const baseUrl = 'http://localhost:8000';
+  const baseUrl = 'https://portfolio-backend-vert-kappa.vercel.app';
 
   const sendEmail = async (values) => { 
     setFormStatus('pending');
