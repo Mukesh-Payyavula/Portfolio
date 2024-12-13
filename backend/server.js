@@ -1,30 +1,31 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const emailRoutes = require("./routes/emailRoutes");
+const cors = require("cors");
 
-const app = express();
 dotenv.config();
 
-const cors = require("cors");
+const app = express();
+
+// Configure CORS
 const corsOptions = {
-    origin: "*",
-    credentials: true, //access-control-allow-credentials:true
-    optionSuccessStatus: 200,
+    origin: "*", // Allow all origins, you might want to restrict this in production
+    credentials: true, // Allow credentials like cookies to be sent
+    optionSuccessStatus: 200, // Handle legacy browsers
 };
 
-app.use(cors()); // Use this after the variable declaration
+app.use(cors(corsOptions)); // Use the defined corsOptions for CORS
 
-app.use(express.json()); // tell the server to accept the json data from frontend
+app.use(express.json()); // Tells the server to accept JSON data from the frontend
 
-//Signup and login
+// Email routes
 app.use("/", emailRoutes);
 
 app.get("/", (req, res) => {
-    res.send();
+    res.send("Server is running");
 });
 
-
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8000; // Fallback to 6000 if PORT is not set in the environment
 app.listen(PORT, () => {
-    console.log(`Example app listening on port ${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });

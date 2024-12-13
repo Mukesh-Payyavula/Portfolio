@@ -13,7 +13,7 @@ import {
   Row,
 } from "react-bootstrap";
 import defaultImage from "./assets/img/default-img.png";
-import myImg from "./assets/img/mukesh.JPG";
+import myImg from "./assets/img/mukesh.jpeg";
 
 const Home = () => {
   return (

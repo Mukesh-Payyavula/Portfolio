@@ -1,6 +1,6 @@
 import React from "react";
 import aboutImg from "./assets/img/lightImg.jpeg";
-import myImg from "./assets/img/mukesh.JPG";
+import myImg from "./assets/img/mukesh.jpeg";
 
 import {
   Card,
