@@ -119,7 +119,65 @@ const About = () => {
                 </CardHeader>
               </Card>
             </Col>
-            <Col xs={12} md={6} className="py-3">
+            <Col xs={12} md={4} className="py-3">
+              <Card>
+                <CardBody className="exp-body">
+                  <CardTitle as="h4">Ecommerce Last Mile Operations</CardTitle>
+                  <CardText as="p" className="mb-1">
+                    Ekart Logistics
+                  </CardText>
+                  <CardText as="p">Aug 2019 - Sept 2022</CardText>
+
+                  <CardTitle>Roles & Responsibilities</CardTitle>
+                  <CardText as="li">
+                  Managed end-to-end last mile delivery operations, ensuring timely and efficient deliveries to customers.
+                  </CardText>
+                  <CardText as="li">
+                  Coordinated with fulfillment centers, third-party delivery partners, and customer service to optimize delivery processes.
+                  </CardText>
+                  <CardText as="li">
+                  Oversaw route planning and optimization, utilizing technology to reduce delivery times and costs.
+                  </CardText>
+                  {/* <CardText as="li">
+                  Monitored key performance indicators (KPIs), such as delivery speed, cost efficiency, and customer satisfaction.
+                  </CardText> */}
+                  <CardText as="li">
+                  Handled customer inquiries and complaints, ensuring a high level of customer service throughout the delivery process.
+                  </CardText>
+                </CardBody>
+              </Card>
+            </Col>
+            <Col xs={12} md={4} className="py-3">
+              <Card>
+                <CardBody className="exp-body">
+                  <CardTitle as="h4">System Administrater</CardTitle>
+                  <CardText as="p" className="mb-1">
+                    SoftnSol Trainings
+                  </CardText>
+                  <CardText as="p">Oct 2022 - Aug 20214</CardText>
+
+                  <CardTitle>Roles & Responsibilities</CardTitle>
+                  <CardText as="li">
+                  Configuring and maintaining the networked computer system, including 
+                  hardware, software and applications. 
+                  </CardText>
+                  <CardText as="li">
+                  Managing network servers and technology tools. 
+                  </CardText>
+                  <CardText as="li">
+                  Providing Remote Desktop support through a centralised server. 
+                  </CardText>
+                  <CardText as="li">
+                    Provided technical support to end-users, ensuring timely resolution of system-related issues.
+                  </CardText>
+                  <CardText as="li">
+                    Provided technical support for remote users, resolving connectivity and system issues promptly.
+                  </CardText>
+                </CardBody>
+              </Card>
+            </Col>
+
+            <Col xs={12} md={4} className="py-3">
               <Card>
                 <CardBody className="exp-body">
                   <CardTitle as="h4">Web Developer</CardTitle>
@@ -152,8 +210,7 @@ const About = () => {
                 </CardBody>
               </Card>
             </Col>
-
-            <Col xs={12} md={6} className="py-3">
+            <Col xs={12} md={12} className="py-3">
               <Card>
                 <CardHeader>
                   <CardTitle className="about-header mb-0" as="h3">
@@ -163,7 +220,7 @@ const About = () => {
                 <CardBody className="exp-body">
                   <div className="mb-4">
                     <CardTitle as="h6">2012 - 2013</CardTitle>
-                    <CardTitle as="h6">SSc</CardTitle>
+                    <CardTitle as="h6">SSC</CardTitle>
                     <CardTitle as="h6">
                       Sharada Educational Institute
                     </CardTitle>
